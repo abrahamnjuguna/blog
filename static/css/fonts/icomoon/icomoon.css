@@ -1,0 +1,405 @@
+@font-face {
+  font-family: 'waituk-icomoon';
+  src: url("../../../fonts/roxine-font-icon/roxine-font-icon.eot");
+  src: url("../../../fonts/roxine-font-icon/roxine-font-icond41d.eot?#iefix") format("embedded-opentype"), url("../../../fonts/roxine-font-icon/roxine-font-icon.woff") format("woff"), url("../../../fonts/roxine-font-icon/roxine-font-icon.ttf") format("truetype"), url("../../../fonts/roxine-font-icon/roxine-font-icon.svg#roxine-font-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'waituk-icomoon';
+  src: url("../../../fonts/icomoon/icomoon.eot");
+  src: url("../../../fonts/icomoon/icomoon.eot#iefix") format("embedded-opentype"), url("../../../fonts/icomoon/icomoon.ttf") format("truetype"), url("../../../fonts/icomoon/icomoon.woff") format("woff"), url("../../../fonts/icomoon/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="waituk-icon-"],
+[class*=" waituk-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'waituk-icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[data-icon]:before {
+  font-family: 'waituk-icomoon' !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'waituk-icomoon' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.waituk-icon-award:before {
+  content: "\e900"; }
+
+.waituk-icon-celebrate:before {
+  content: "\e901"; }
+
+.waituk-icon-dribbble:before {
+  content: "\e902"; }
+
+.waituk-icon-email:before {
+  content: "\e903"; }
+
+.waituk-icon-facebook:before {
+  content: "\e904"; }
+
+.waituk-icon-font-design:before {
+  content: "\e905"; }
+
+.waituk-icon-google-plus:before {
+  content: "\e906"; }
+
+.waituk-icon-heart:before {
+  content: '\e0b6'; }
+
+.waituk-icon-cart:before {
+  content: "\e908"; }
+
+.waituk-icon-layers:before {
+  content: "\e909"; }
+
+.waituk-icon-link:before {
+  content: '\e0e1'; }
+
+.waituk-icon-list:before {
+  content: "\e90b"; }
+
+.waituk-icon-pen-tool:before {
+  content: "\e90c"; }
+
+.waituk-icon-phone:before {
+  content: "\e90d"; }
+
+.waituk-icon-pin:before {
+  content: "\e90e"; }
+
+.waituk-icon-pinterest:before {
+  content: "\e90f"; }
+
+.waituk-icon-projects:before {
+  content: "\e910"; }
+
+.waituk-icon-smile:before {
+  content: "\e911"; }
+
+.waituk-icon-twitter:before {
+  content: "\e912"; }
+
+.waituk-icon-vector:before {
+  content: "\e913"; }
+
+.waituk-icon-angle-right:before {
+  content: "\e914"; }
+
+.waituk-icon-angle-left:before {
+  content: "\e915"; }
+
+.waituk-icon-plus:before {
+  content: "\e916"; }
+
+.waituk-icon-calendar:before {
+  content: "\e917"; }
+
+.waituk-icon-folder:before {
+  content: "\e918"; }
+
+.waituk-icon-link2:before {
+  content: "\e919"; }
+
+.waituk-icon-skill:before {
+  content: "\e91a"; }
+
+.waituk-icon-user:before {
+  content: "\e91b"; }
+
+.waituk-icon-headset:before {
+  content: "\e91c"; }
+
+.waituk-icon-message:before {
+  content: "\e91d"; }
+
+.waituk-icon-map-marker:before {
+  content: "\e91e"; }
+
+.waituk-icon-globe:before {
+  content: "\e91f"; }
+
+.waituk-icon-pyramid:before {
+  content: "\e920"; }
+
+.waituk-icon-hexagon:before {
+  content: "\e921"; }
+
+.waituk-icon-cube:before {
+  content: "\e922"; }
+
+.waituk-icon-minus:before {
+  content: "\e923"; }
+
+.waituk-icon-phone-ring:before {
+  content: "\e924"; }
+
+.waituk-icon-search:before {
+  content: "\e925"; }
+
+.waituk-icon-dollar:before {
+  content: "\e926"; }
+
+.waituk-icon-email1:before {
+  content: "\e927"; }
+
+.waituk-icon-arrow-right:before {
+  content: "\e928"; }
+
+.waituk-icon-users-1:before {
+  content: '\e56c'; }
+
+.waituk-icon-users:before {
+  content: '\e1cd'; }
+
+.waituk-icon-user-profile:before {
+  content: '\ec07'; }
+
+.waituk-icon-settings-streamline-2:before {
+  content: '\e337'; }
+
+.waituk-icon-mortar-board:before {
+  content: '\e25b'; }
+
+.waituk-icon-contact-book:before {
+  content: '\eef1'; }
+
+.waituk-icon-text-align-left:before {
+  content: '\ebda'; }
+
+.waituk-icon-text-align-right:before {
+  content: '\ebdb'; }
+
+.waituk-icon-arrow-swap:before {
+  content: '\e8d7'; }
+
+.waituk-icon-resize-full:before {
+  content: '\e52d'; }
+
+.waituk-icon-screen-full:before {
+  content: '\e280'; }
+
+.waituk-icon-code:before {
+  content: '\e02b'; }
+
+.waituk-icon-source-code:before {
+  content: '\ebcc'; }
+
+.waituk-icon-question-circle-outline:before {
+  content: '\ed5e'; }
+
+.waituk-icon-error-two:before {
+  content: '\ef2d'; }
+
+.waituk-icon-error:before {
+  content: '\ef2a'; }
+
+.waituk-icon-sitemap:before {
+  content: '\e165'; }
+
+.waituk-icon-user-plus:before {
+  content: '\e1ca'; }
+
+.waituk-icon-envelope-1:before {
+  content: '\e5b0'; }
+
+.waituk-icon-login:before {
+  content: '\e4f8'; }
+
+.waituk-icon-ios-unlocked:before {
+  content: '\e7bf'; }
+
+.waituk-icon-dashboard-1:before {
+  content: '\eed3'; }
+
+.waituk-icon-edit-modify-streamline:before {
+  content: '\e304'; }
+
+.waituk-icon-server:before {
+  content: '\e157'; }
+
+.waituk-icon-magic:before {
+  content: '\e0ef'; }
+
+.waituk-icon-tasks:before {
+  content: '\e198'; }
+
+.waituk-icon-th-large:before {
+  content: '\e1a0'; }
+
+.waituk-icon-time:before {
+  content: '\eee8'; }
+
+.waituk-icon-table:before {
+  content: '\e193'; }
+
+.waituk-icon-calendar-11:before {
+  content: '\f1c5'; }
+
+.waituk-icon-indent-right:before {
+  content: '\ef67'; }
+
+.waituk-icon-lightbulb:before {
+  content: '\e3a1'; }
+
+.waituk-icon-picture:before {
+  content: '\e517'; }
+
+.waituk-icon-edit-pen-1:before {
+  content: '\efde'; }
+
+.waituk-icon-list-alt:before {
+  content: '\e0e6'; }
+
+.waituk-icon-plus-circle:before {
+  content: '\e134'; }
+
+.waituk-icon-mark-map:before {
+  content: '\ed6b'; }
+
+.waituk-icon-play:before {
+  content: '\e12f'; }
+
+.waituk-icon-move:before {
+  content: '\eb4f'; }
+
+.waituk-icon-cogs:before {
+  content: '\e030'; }
+
+.waituk-icon-progress-2:before {
+  content: '\e522'; }
+
+.waituk-icon-arrow-move:before {
+  content: '\e7c5'; }
+
+.waituk-icon-star-6:before {
+  content: '\e70d'; }
+
+.waituk-icon-dollar-2:before {
+  content: '\f1aa'; }
+
+.waituk-icon-thumbs-up:before {
+  content: '\e1a6'; }
+
+.waituk-icon-rocket:before {
+  content: '\e14d'; }
+
+.waituk-icon-quote-left:before {
+  content: '\e13e'; }
+
+.waituk-icon-laptop-6:before {
+  content: '\f1e9'; }
+
+.waituk-icon-folder-open:before {
+  content: '\e088'; }
+
+.waituk-icon-facebook:before {
+  content: '\e065'; }
+
+.waituk-icon-google-plus:before {
+  content: '\e0a1'; }
+
+.waituk-icon-pinterest:before {
+  content: '\e12b'; }
+
+.waituk-icon-dribbble:before {
+  content: '\e04e'; }
+
+.waituk-icon-twitter:before {
+  content: '\e1be'; }
+
+.waituk-icon-select:before {
+  content: '\e5e5'; }
+
+.waituk-icon-columns:before {
+  content: '\e031'; }
+
+.waituk-icon-close-round:before {
+  content: '\e7ab'; }
+
+.waituk-icon-angle-left:before {
+  content: '\72'; }
+
+.waituk-icon-angle-right:before {
+  content: '\73'; }
+
+.waituk-icon-ios-more:before {
+  content: '\e8ce'; }
+
+.waituk-icon-law:before {
+  content: '\e248'; }
+
+.waituk-icon-android-contacts:before {
+  content: '\e7b9'; }
+
+.waituk-icon-sort-1:before {
+  content: '\ec89'; }
+
+.waituk-icon-long-arrow-left:before {
+  content: '\e0ec'; }
+
+.waituk-icon-long-arrow-right:before {
+  content: '\e0ed'; }
+
+.waituk-icon-sign-in:before {
+  content: '\e161'; }
+
+.waituk-icon-user-outline:before {
+  content: '\e5f5'; }
+
+.waituk-icon-ios-locked-outline:before {
+  content: '\e779'; }
+
+.waituk-icon-thumbs-up-1:before {
+  content: '\e554'; }
+
+.waituk-icon-photos-pictures:before {
+  content: '\ecfe'; }
+
+.waituk-icon-group-full:before {
+  content: '\eb10'; }
+
+.waituk-icon-ios-star:before {
+  content: '\e8a8'; }
+
+.waituk-icon-android-close:before {
+  content: '\e95a'; }
+
+.waituk-icon-ios-close-empty:before {
+  content: '\e6f3'; }
+
+.waituk-icon-calendar:before {
+  content: '\3f'; }
+
+.waituk-icon-paper-plane-1:before {
+  content: '\e511'; }
+
+.waituk-icon-close-round:before {
+  content: '\e7ab'; }
