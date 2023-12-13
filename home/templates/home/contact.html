@@ -1,0 +1,136 @@
+{% extends 'home/base/base.html' %}
+{% block content %}
+
+<main class="no-banner">
+    <!-- visual/banner of the page -->
+    <section class="visual visual-sub visual-no-bg">
+        <div class="visual-inner no-overlay bg-gray-light">
+            <div class="centered">
+                <div class="container">
+                    <div class="visual-text visual-center">
+                        <div class="visual-title">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div class="breadcrumb-block">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+                                <li class="breadcrumb-item active"> Contact Us </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/visual/banner of the page -->
+    <!-- main content wrapper -->
+    <div class="content-wrapper">
+        <section class="content-block pb-0">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-title">
+                        <h6>GET IN TOUCH WITH US</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- contact form -->
+                            <form action="#" method="post" id="contact_form" class="waituk_contact-form">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="FIRST NAME *" id="con_fname" name="first_name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="LAST NAME *" id="con_lname" name="last_name" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="tel" placeholder="PHONE NUMBER" id="con_phone" name="phone_number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" placeholder="EMAIL ADDRESS *" id="con_email" name="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="MESSAGE *" id="con_message" name="message"></textarea>
+                                </div>
+                                <div class="btn-container">
+                                    <input type="submit" class="btn btn-black btn-lg" value="Send Message" />
+                                    <p id="error_message"> </p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                            <!-- <div class="info-slot">
+                                <div class="icon"><span class="waituk-icon-map-marker"></span></div>
+                                <div class="text">
+                                    <address>707 London Road, Isleworth
+                                        <br>Middlesex, TW7 7QD
+                                        <br>United Kingdom</address>
+                                </div>
+                            </div> -->
+                            <div class="info-slot">
+                                <div class="icon"><span class="waituk-icon-headset"></span></div>
+                                <div class="text">
+                                    <ul class="content-list contact-list">
+                                        <li><span class="label-text">HELPLINE</span> <a href="tel:02078777777">+254 722-151-358</a></li>
+                                        <li><span class="label-text">HELPLINE</span> <a href="tel:02078777777">+254 722-151-358</a></li>
+                                        <li><span class="label-text">ADDRESS</span> <a href="tel:02078777777">Nairobi, Kenya</a></li>
+                                        <!-- <li><span class="label-text">FAX</span> <a href="tel:02078777777">(020) 7877 7777</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-slot">
+                                <div class="icon"><span class="waituk-icon-message"></span></div>
+                                <div class="text">
+                                    <ul class="content-list contact-list">
+                                        <li><a href="mailto:support@roxine-online">mercygitau17@gmail.com</a></li>
+                                        <li><a href="mailto:info@roxine-online.com"> info@wanjiku.com</a></li>
+                                        <!-- <li><a href="mailto:help@roxine-online.com">Sample3@email.com</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="map-holder embed-responsive-21by9 grayscaled-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.793978127296!2d36.79037807580386!3d-1.2983533356411592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6bf3efffff%3A0x111775bb295f8d1f!2sNairobi%20Garage!5e0!3m2!1sen!2ske!4v1702485465506!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <aside class="content-block">
+            <div class="container">
+                <div class="logo-container">
+                    <div class="owl-carousel logo-slide" id="waituk-owl-slide-4">
+                        <div class="slide-item">
+                            <img src="/static/img/logo-01.png" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="/static/img/logo-02.png" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="/static/img/logo-03.png" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="/static/img/logo-04.png" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="/static/img/logo-03.png" alt="images description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!--/main content wrapper -->
+</main>
+{% endblock %}

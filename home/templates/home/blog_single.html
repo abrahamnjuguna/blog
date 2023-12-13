@@ -1,0 +1,141 @@
+{% extends 'home/base/base.html' %}
+{% block content %}
+<main>
+    <section class="visual">
+        <div class="visual-inner about-banner dark-overlay parallax" data-stellar-background-ratio="0.55">
+            <div class="centered">
+                <div class="container">
+                    <div class="visual-text visual-center">
+                        <div class="visual-title">
+                            <h1>{{single_post.title}}</h1>
+                        </div>
+                        <div class="breadcrumb-block">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+                                <li class="breadcrumb-item"><a href="index.html"> Wambui's Blog</a></li>
+                                <li class="breadcrumb-item active"> Blog Single </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content-wrapper">
+        <section class="content-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+
+                        <div class="blog-holder">
+                            <article class="blog-article">
+                                <div class="blog-title text-center pb-5">
+                                    <h1>{{single_post.sub_title}}</h1>
+                                    <div class="blog-lists border-0">
+                                        <ul class="blog-list-items">
+                                            <li>By: <a href="#">Admin</a></li>
+                                            <li>
+                                                <time datetime="2011-01-12">{{single_post.date}} </time>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="blog-desc pt-5">
+                                    <div class="blog-img">
+                                        <div class="image-wrap">
+                                            <figure class="">
+                                                <img src="{{single_post.poster.url}}" alt="images description">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        {{single_post.content|safe}}
+                                    </p>
+                                    
+                                    <!-- <div class="blockquote-block blockquote-block-v2 pt-3 pb-3">
+                                        <blockquote>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                                        </blockquote>
+                                    </div>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                        ex ea commodo consequat.</p>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                        laborum.
+                                    </p> -->
+                                    <div class="blog-share mt-5">
+                                        <ul class="social-network with-text">
+                                            <li><strong>Share :</strong></li>
+                                            <li><a href="{{single_post.facebook_link}}"><span class="waituk-icon-facebook"></span> Facebook</a></li>
+                                            <li><a href="{{single_post.twitter_link}}"><span class="waituk-icon-twitter"></span> Twitter</a></li>
+                                            <li><a href="{{single_post.instagram_link}}"><span class="waituk-icon-insta"></span> Instagram</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        {% if request.user.is_authenticated %}
+                            <div class="btn-container full-width-btn top-space">
+                                <a href="{% url 'blog_update' single_post.id %}" class="btn btn-black">Update Blog<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-lg-4 flex-lg-first">
+                        <div class="sidebar-wrap mt-5 mt-lg-0">
+                            <div class="widget-block">
+                                <div class="post-block">
+                                    <h4>RECENT POSTS</h4>
+                                    {% for blog in recent_blogs %}
+                                        <div class="post-holder">
+                                            <div class="post-avatar">
+                                                <img src="{{blog.poster.url}}" alt="image description">
+                                            </div>
+                                            <div class="post-desc">
+                                                <h6><a href="{% url 'blog_single' blog.id%}">{{blog.title}}</a></h6>
+                                                <p>7 Comments</p>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="tag-block mt-5">
+                                    <h4>TAG CLOUD</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">UI/UX</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+{% endblock %}

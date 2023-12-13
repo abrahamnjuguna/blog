@@ -1,0 +1,69 @@
+{% extends 'home/base/base.html' %}
+{% block content %}
+
+<main>
+    <!-- main content wrapper -->
+    <div class="content-wrapper">
+        <div class="row  no-gutters">
+            <div class="col-lg-6 d-lg-block d-none">
+                <div class="bg-stretch img-wrap">
+                    <img src="/static/img/visual-12.jpg" alt="images">
+                </div>
+            </div>
+            <div class="col-lg-6 signup-block">
+                <div class="signup-wrap text-center">
+                    <div class="inner-wrap">
+                        <div class="circular-icon bottom-space"><i class="waituk-icon-sign-in"></i></div>
+                        <form action="#" method="POST" id="contact_form" class="waituk_contact-form signup-form">
+                            {% csrf_token %}
+                            <div class="bottom-space">
+                                <h2>User Login</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="USERNAME OR EMAIL" id="con_uname" name="username" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" placeholder="PASSWORD" id="con_password" name="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="waituk_select-box">
+                                        <div class="waituk_select-box-default square-box">
+                                            <input type="checkbox" name="checkbox" id="checkbox11">
+                                            <label for="checkbox11" class="m-0">REMEMBER ME</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><a href="#">Forgot Password ?</a></p>
+                                </div>
+                            </div>
+                            <div class="btn-container mb-3  mb-xl-3 mt-xl-5 mt-lg-2">
+                                <input type="submit" class="btn btn-black btn-lg" value="Log In" />
+                            </div>
+                            <p>Don't have an account yet?
+                                <a href="#"> Register New Account. </a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/main content wrapper -->
+</main>
+
+
+
+{% endblock %}
+<div class="form-row">
+    <div class="form-group col-md-6 mb-0">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+    </div>
+    <div class="form-group col-md-6 mb-0">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+    </div>
+</div>

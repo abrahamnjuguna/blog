@@ -82,7 +82,7 @@
                 <div id="nav-section">
                     <div class="bottom-header container-fluid mega-menus" id="mega-menus">
                         <nav class="navbar navbar-expand-lg navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
-                            <form action="https://html.waituk.com/roxine/mega-menu-5.html" id="top-search" class="no-margin top-search">
+                            <form action="" id="top-search" class="no-margin top-search">
                                 <div class="form-group no-margin">
                                     <input class="form-control no-border" id="search_term" name="search_term" placeholder="Type & Press Enter" type="text">
                                 </div>
@@ -90,11 +90,11 @@
                             <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html"> <img src="static/img/logo.svg" alt="roxine"> <img src="static/img/logo-dark.svg" alt="roxine"> </a>
+                            <a class="navbar-brand mr-auto m-sm-auto" href="{% url 'home' %}"> <img src="/static/img/logo.png" alt="roxine"> <img src="/static/img/logo_1.png" alt="roxine"> </a>
                             <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown" data-animation="fadeIn">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Home </a>
+                                        <a  href="{% url 'home' %}" > Home </a>
                                         <!-- <ul class="dropdown-menu no-border-radius">
                                             <li><a href="index.html"> Creative Agency </a></li>
                                         </ul> -->
@@ -110,9 +110,12 @@
                                             </li>
                                         </ul> -->
                                     </li>
-                                    <li class="dropdown" data-animation="fadeIn">
+                                    <li>
+                                        <a href="{% url 'services' %}"> Services </a>
+                                    </li>
+                                    <!-- <li class="dropdown" data-animation="fadeIn">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Courses </a>
-                                        <!-- <ul class="dropdown-menu no-border-radius">
+                                        <ul class="dropdown-menu no-border-radius">
                                             <li class="dropdown dropdown-left dropdown-parent">
                                                 <a class="sub-marker" href="#"> No Sidebar <i class="waituk-icon-ios-more icn-right"></i></a>
                                                 <ul class="dropdown-menu dropdown-menu-indent-sm no-border-radius">
@@ -120,20 +123,29 @@
                                                 </ul>
                                             </li>
                                             <li><a href="portfolio-masonary.html"> Masonary </a></li>
-                                        </ul> -->
-                                    </li>
+                                        </ul>
+                                    </li> -->
                                     <li class="dropdown dropdown-full-width-g" data-animation="fadeIn">
                                         <a href="{% url 'blogs' %}" >Blog </a>
                                     </li>
                                     <li class="dropdown right-dropdown" data-animation="fadeIn">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Faq </a>
+                                        <a href="{% url 'faq' %}" data-title="Home"> Faq </a>
                                         <!-- <ul class="dropdown-menu no-border-radius">
                                         	<li><a href="blog-one-col.html"> Blog One Column </a></li>
                                         </ul> -->
                                     </li>
                                     <li>
-                                        <a href="contact.html"> Contact </a>
+                                        <a href="{% url 'contact' %}"> Contact </a>
                                     </li>
+                                    {% if request.user.is_authenticated %}
+                                        <li>
+                                            <a href="{% url 'logout' %}"> Log Out </a>
+                                        </li>
+                                    {% else %}
+                                        <li>
+                                            <a href="{% url 'login' %}"> Log IN </a>
+                                        </li>
+                                    {% endif %}
                                     <!-- <li class="dropdown cart-list margin-0-sm">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><span class="d-lg-none"> Shopping Cart </span><i class="waituk-icon-cart m-marker"></i></a>
                                         <div class="dropdown-menu-container">
@@ -174,7 +186,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="footer-logo">
-                                <img src="static/img/logo-dark.svg" alt="image-description">
+                                <img src="/static/img/logo.png" alt="image-description">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -201,7 +213,7 @@
             </div>
             <div class="footer-bottom text-center">
                 <div class="container">
-                    <p>Copyright 2016 - Roxine - Multi Purpose Theme by Waituk </p>
+                    <p>Copyright 2016 - Wanjiku Blog </p>
                 </div>
             </div>
         </footer>

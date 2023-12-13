@@ -1,0 +1,184 @@
+{% extends 'home/base/base.html' %}
+{% block content %}
+<main>
+    <section class="visual">
+        <div class="visual-inner about-banner dark-overlay parallax" data-stellar-background-ratio="0.55">
+            <div class="centered">
+                <div class="container">
+                    <div class="visual-text visual-center">
+                        <div class="visual-title">
+                            <h1>Our FAQ'S</h1>
+                        </div>
+                        <div class="breadcrumb-block">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+                                <li class="breadcrumb-item"><a href="index.html"> Wambui's Blogs </a></li>
+                                <li class="breadcrumb-item active"> Our Faq's </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content-wrapper">
+        <section class="content-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="accordion-container">
+                            <div id="accordion1" role="tablist" aria-multiselectable="true">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingFour">
+                                        <h5 class="mb-0"><a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">How do I purchase the modules using MPESA?
+                                        </a></h5>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour">
+                                        <div class="card-block">
+                                            <p>To purchase our digital modules using MPESA, simply select the desired courses, proceed to checkout, and choose the MPESA payment option. Follow the provided instructions to complete the payment using your MPESA account.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingFive">
+                                        <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Are there any additional charges for paying via MPESA?
+                                        </a></h5>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+                                        <div class="card-block">
+                                            <p>Yes, your MPESA transactions on our platform are completely secure. We prioritize the safety and confidentiality of all payment processes.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingSix">
+                                        <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Is MPESA payment secure on your platform?</a></h5>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+                                        <div class="card-block">
+                                            <p>Indulgence announcing uncommonly met she continuing two unpleasing terminated. Now busy say down the shed eyes roof paid her. Of shameless collected suspicion existence in. Share walls stuff think but the
+                                                arise guest. Course suffer to do he sussex it window advice. Yet matter enable misery end extent common men should. Her indulgence but assistance favourable cultivated everything collecting.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingeight">
+                                        <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapseeight" aria-expanded="false" aria-controls="collapseeight">Can I get a refund if I'm not satisfied with the purchased modules?
+                                        </a></h5>
+                                    </div>
+                                    <div id="collapseeight" class="collapse" role="tabpanel" aria-labelledby="headingeight">
+                                        <div class="card-block">
+                                            <p>We offer a satisfaction guarantee. If you're not entirely satisfied with the purchased modules, please contact our support team within [specified time frame] for assistance.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingSeven">
+                                        <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            Are the digital modules accessible on mobile devices?
+
+                                        </a></h5>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                        <div class="card-block">
+                                            <p>Yes, our digital modules are accessible on various devices, including mobile phones, tablets, and computers. You can learn on-the-go at your convenience.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 flex-lg-first">
+                        <div class="sidebar-wrap mt-5 mt-lg-0">
+                            <div class="widget-block">
+                                <div class="post-block">
+                                    <h4>RECENT POSTS</h4>
+                                    {% for blog in recent_blogs %}
+                                        <div class="post-holder">
+                                            <div class="post-avatar">
+                                                <img src="{{blog.poster.url}}" alt="image description">
+                                            </div>
+                                            <div class="post-desc">
+                                                <h6><a href="{% url 'blog_single' blog.id%}">{{blog.title}}</a></h6>
+                                                <p>7 Comments</p>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <!-- <div class="twitter-feed mt-5">
+                                    <h4>TWITTER FEED</h4>
+                                    <div class="tweet-holder"><a href="#" class="post-link"></a>
+                                        <div class="twit-ico"><i class="waituk-icon-twitter"></i></div>
+                                        <div class="twit-desc">
+                                            <h6><a href="#">Roxine Templates</a></h6>
+                                            <p>7 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="tweet-holder"><a href="#" class="post-link"></a>
+                                        <div class="twit-ico"><i class="waituk-icon-twitter"></i></div>
+                                        <div class="twit-desc">
+                                            <h6><a href="#">Roxine Templates</a></h6>
+                                            <p>7 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="tweet-holder"><a href="#" class="post-link"></a>
+                                        <div class="twit-ico"><i class="waituk-icon-twitter"></i></div>
+                                        <div class="twit-desc">
+                                            <h6><a href="#">Roxine Templates</a></h6>
+                                            <p>7 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="tweet-holder"><a href="#" class="post-link"></a>
+                                        <div class="twit-ico"><i class="waituk-icon-twitter"></i></div>
+                                        <div class="twit-desc">
+                                            <h6><a href="#">Roxine Templates</a></h6>
+                                            <p>7 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="tag-block mt-5">
+                                    <h4>TAG CLOUD</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">UI/UX</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+{% endblock %}

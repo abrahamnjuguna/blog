@@ -1,0 +1,118 @@
+{% extends 'home/base/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<main>
+    <section class="visual">
+        <div class="visual-inner about-banner dark-overlay parallax" data-stellar-background-ratio="0.55">
+            <div class="centered">
+                <div class="container">
+                    <div class="visual-text visual-center">
+                        <div class="visual-title">
+                            <h1>{{blog_obj.title}}</h1>
+                        </div>
+                        <div class="breadcrumb-block">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+                                <li class="breadcrumb-item"><a href="index.html"> Wambui's Blog</a></li>
+                                <li class="breadcrumb-item active"> Blog Create </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content-wrapper">
+        <section class="content-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <form method="post" enctype="multipart/form-data" > 
+                            {% csrf_token %} 
+                            {{ form.media}}
+                            {{ form.title|as_crispy_field }}
+                            {{ form.sub_title|as_crispy_field }}
+                            {{ form.content }}
+                            {{ form.poster|as_crispy_field }}
+                            <div class="form-row">
+                                <div class="form-group col-md-6 mb-0">
+                                  {{ form.facebook_link|as_crispy_field }}
+                                </div>
+                                <div class="form-group col-md-6 mb-0">
+                                  {{ form.twitter_link|as_crispy_field }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6 mb-0">
+                                    {{ form.instagram_link|as_crispy_field }}
+                                </div>
+                                <div class="form-group col-md-6 mb-0">
+                                    {{ form.linkedin_link|as_crispy_field }}
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <input type="submit" class="btn btn-black btn-lg" value="Update" />
+                            </div>
+                        </form>
+                        <!-- <div class="btn-container full-width-btn top-space">
+                            <a href="javascript:void(0)" class="btn btn-black">LOAD MORE<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-4 flex-lg-first">
+                        <div class="sidebar-wrap mt-5 mt-lg-0">
+                            <div class="widget-block">
+                                <div class="post-block">
+                                    <h4>RECENT POSTS</h4>
+                                    {% for blog in recent_blogs %}
+                                        <div class="post-holder">
+                                            <div class="post-avatar">
+                                                <img src="{{blog.poster.url}}" alt="image description">
+                                            </div>
+                                            <div class="post-desc">
+                                                <h6><a href="{% url 'blog_single' blog.id%}">{{blog.title}}</a></h6>
+                                                <p>7 Comments</p>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="tag-block mt-5">
+                                    <h4>TAG CLOUD</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">UI/UX</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+{% endblock %}
