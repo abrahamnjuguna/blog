@@ -115,3 +115,6 @@ def faq(request):
         'recent_blogs':recent_blogs,
     }
     return render(request, 'home/faq.html', context)
+
+def about(request):
+    return render(request, 'home/about.html')
