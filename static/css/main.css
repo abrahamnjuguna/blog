@@ -9565,28 +9565,23 @@ a.full-width-icon:hover .social-text {
 }
 
 .slider-title.text-white {
-	font-size: 1.5rem;
+	font-size: 0.5rem;
 	line-height: 1.2;
 }
 
 .slider-main-title {
 	color: #575757;
-	font-size: 1.875rem;
-	line-height: 1.2;
 	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 1.875rem;
 }
 
 .slider-sub-title {
 	color: #5645ff;
-	font-size: 1.125rem;
-	line-height: 1.2;
 	text-transform: uppercase;
 	font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 600;
-	letter-spacing: .3125rem;
 	margin-bottom: 1.25rem;
 }
 
@@ -10723,12 +10718,8 @@ pre {
 		font-size: 1.875rem;
 	}
 
-	.slider-main-title {
-		font-size: 2.25rem;
-	}
-
 	.slider-sub-title {
-		font-size: 1.25rem;
+		font-size: 1.75rem;
 	}
 
 	.about-author h4 {
@@ -10945,13 +10936,8 @@ pre {
 		font-size: 2.25rem;
 	}
 
-	.slider-main-title {
-		font-size: 2.625rem;
-	}
 
-	.slider-sub-title {
-		font-size: 1.5rem;
-	}
+	
 
 	.slider-text {
 		font-size: .8571rem;
@@ -11586,13 +11572,6 @@ pre {
 		font-size: 2.625rem;
 	}
 
-	.slider-main-title {
-		font-size: 3rem;
-	}
-
-	.slider-sub-title {
-		font-size: 1.75rem;
-	}
 
 	.about-author h4 {
 		font-size: 1.063rem;
@@ -11775,9 +11754,7 @@ pre {
 	}
 
 	.slider-main-title {
-		font-size: 10rem;
-		line-height: 10rem;
-		letter-spacing: 1.563rem;
+
 		margin-bottom: 4.375rem;
 	}
 
@@ -12306,13 +12283,7 @@ pre {
 		font-size: 3rem;
 	}
 
-	.slider-main-title {
-		font-size: 3.375rem;
-	}
-
-	.slider-sub-title {
-		font-size: 1.875rem;
-	}
+	
 
 	.about-author h4 {
 		font-size: 1.125rem;
@@ -12502,7 +12473,7 @@ pre {
 	}
 
 	.slider-main-title {
-		font-size: 3.75rem;
+		font-size: 0.75rem;
 	}
 }
 

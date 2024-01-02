@@ -9021,7 +9021,6 @@ a.full-width-icon {
 
 .slider-main-title {
   color: #575757;
-  font-size: 1.875rem;
   line-height: 1.2;
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -9082,7 +9081,7 @@ a.full-width-icon {
 
 .slider-text {
   color: #575757;
-  font-size: 0.75rem;
+  font-size: 10px;
   line-height: 2.1;
   line-height: 1.875rem;
   font-weight: 500;

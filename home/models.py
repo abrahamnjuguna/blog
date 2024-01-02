@@ -8,6 +8,7 @@ class Blog(models.Model):
     content = RichTextUploadingField()
     poster = models.ImageField(null=True)
     date = models.DateField(auto_now_add=True, null=True)
+    category = models.CharField(null=True, max_length=255)
     facebook_link = models.URLField()
     twitter_link = models.URLField()
     instagram_link = models.URLField()
