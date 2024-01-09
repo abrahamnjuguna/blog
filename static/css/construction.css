@@ -7429,7 +7429,7 @@ a.full-width-icon {
   background-image: url("../img/visual-small-05.jpg"); }
 
 .quotation-block {
-  background-image: url("../img/big-15.png"); }
+  background-image: url("../img/big-15.jpg"); }
 
 .count-block {
   background-image: url("../img/visual-small-11.jpg"); }
@@ -9021,6 +9021,7 @@ a.full-width-icon {
 
 .slider-main-title {
   color: #575757;
+  font-size: 1.875rem;
   line-height: 1.2;
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -9081,7 +9082,7 @@ a.full-width-icon {
 
 .slider-text {
   color: #575757;
-  font-size: 10px;
+  font-size: 0.75rem;
   line-height: 2.1;
   line-height: 1.875rem;
   font-weight: 500;
