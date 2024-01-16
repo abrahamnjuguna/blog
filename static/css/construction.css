@@ -5035,7 +5035,7 @@ main.no-banner {
   color: #55565b;
   font-weight: 700; }
   .heading h2 span {
-    color: #f57f17; }
+    color: #073850; }
 
 /******* icon box styles *******/
 .ico-box {
@@ -6692,7 +6692,7 @@ a.full-width-icon {
   margin-bottom: 2.8125rem; }
   @media only screen and (min-width: 991px) {
     .contact-title h6 {
-      margin-bottom: 4.6875rem; } }
+      margin-bottom: 1.6875rem; } }
 
 .info-slot {
   margin-bottom: 1.875rem;
