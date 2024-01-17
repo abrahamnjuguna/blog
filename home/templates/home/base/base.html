@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="icon" href="/static/img/favicon-01.png" type="image/x-icon">
         {% if title %}
             <title>WANJIKU|{{title}}</title>
         {% else %}
@@ -49,27 +50,27 @@
             <a href="#">Close Panel <i class="waituk-icon-long-arrow-right"></i> </a>
             <div class="divider-border"><span class="sr-only"></span></div>
         </div>
-            <div class="col-sm-12 pb-3">
+            <!-- <div class="col-sm-12 pb-3">
                 <a href="#" class="btn btn-black btn-small-font btn-solid-facebook has-radius-small"><span class="waituk-icon-facebook"><span class="sr-only">&nbsp;</span></span> LOGIN WITH FACEBOOK</a>
             </div>
             <div class="col-sm-12">
                 <a href="#" class="btn btn-black btn-small-font btn-solid-google has-radius-small"><span class="waituk-icon-google-plus"><span class="sr-only">&nbsp;</span></span> LOGIN WITH GOOGLE</a>
-            </div>
-        <div class="divider-border"><span class="sr-only"></span></div>
+            </div> -->
+        <!-- <div class="divider-border"><span class="sr-only"></span></div> -->
         <ul class="side-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'blogs' %}">Blog</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
         <nav class="header-links">
             <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
             </ul>
         </nav>
         <div class="divider-border"><span class="sr-only"></span></div>
-        <div class="p-3">
+        <!-- <div class="p-3">
             <ul class="social-network square-icon shadowed-icon">
                 <li><a href="#"><span class="waituk-icon-facebook"></span></a></li>
                 <li><a href="#"><span class="waituk-icon-twitter"></span></a></li>
@@ -77,7 +78,7 @@
                 <li><a href="#"><span class="waituk-icon-pinterest"></span></a></li>
                 <li><a href="#"><span class="waituk-icon-dribbble"></span></a></li>
             </ul>
-        </div>
+        </div> -->
     </nav>
     <!-- main wrapper -->
     <div id="wrapper" class="no-overflow-x">
@@ -258,6 +259,7 @@
     <script type="text/javascript" src="{% static 'vendors/rev-slider/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
     <!-- SNOW ADD ON -->
     <script type="text/javascript" src="{% static 'vendors/rev-slider/revolution-addons/snow/revolution.addon.snow.min.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SYb1BB5fRTpOqF5t5u78qF4KJt9b5I1JfKx4y" crossorigin="anonymous">
     <!-- Revolution Slider Script -->
     <script src="{% static 'js/revolution.js' %}"></script>
 </body>
