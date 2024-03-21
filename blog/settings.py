@@ -118,16 +118,15 @@ WSGI_APPLICATION = 'blog.wsgi.application'
     
 # }
 # production
-
 if config('MODE')=="prod":
    DATABASES = {
        'default': {
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
+           'ENGINE': 'django.db.backends.postgresql',
            'NAME': config('DB_NAME'),
            'USER': config('DB_USER'),
            'PASSWORD': config('DB_PASSWORD'),
            'HOST': config('DB_HOST'),
-           'PORT': '',
+           'PORT': '5432',
        }
        
    }
